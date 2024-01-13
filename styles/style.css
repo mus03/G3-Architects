@@ -66,7 +66,8 @@ nav li a {
 }
 
 /* main style */
-main {
+main,
+footer {
   max-width: 1440px;
   margin: 70px auto;
 }
@@ -96,25 +97,65 @@ main {
   padding-right: 70px;
   padding-left: 70px;
 }
-
+/* features style */
+.features {
+  display: flex;
+  margin-top: 130px;
+  gap: 100px;
+}
+.features .section-title {
+  padding-left: 20px;
+  border-left: 5px;
+  border-left: 5px solid #ff900e;
+}
+.feature-content .card {
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.ten-years-badge {
+  border-radius: 8px;
+  background: #ff900e;
+  color: #fff;
+  text-align: center;
+  width: 342px;
+  padding: 42px;
+}
+.ten-years-badge h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 70px;
+  margin: 0px;
+}
+.ten-years-badge p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 40px;
+  margin: 0;
+}
 /* fact style */
+.facts {
+  margin-top: 100px;
+}
 .facts-card-container {
   display: flex;
   justify-content: space-around;
 }
-.card {
+.facts-card-container .card {
   border-radius: 8px;
   border: 1px solid #ff900e;
   text-align: center;
   padding: 30px 30px;
 }
-.card-stats {
+.facts-card-container .card-stats {
   font-size: 2.8rem;
   color: #424242;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.card-title {
+.facts-card-container .card-title {
   font-weight: 600;
   font-size: 20px;
   color: #727272;
@@ -123,6 +164,7 @@ main {
 /* sponsors style */
 .sponsors {
   text-align: center;
+  margin-top: 100px;
 }
 .sponsors-img-container {
   display: flex;
@@ -135,6 +177,19 @@ main {
   width: 165px;
   height: 50px;
 }
+
+/* footer style */
+
+.copy {
+  color: #424242;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border-radius: 8px;
+  background: #fff4e7;
+  padding: 39px;
+}
+
 /* responsive styles */
 @media screen and (max-width: 576px) {
   header {
